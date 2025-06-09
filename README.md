@@ -20,3 +20,5 @@ make the loops to keep checking the user's answer
 Week 2
 Write the if-else statement
 debug the code and make it run properly
+
+https://www.w3schools.com/python/python_classes.asp
