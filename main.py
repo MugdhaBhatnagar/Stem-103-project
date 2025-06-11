@@ -1,6 +1,7 @@
 # import the stuff needed
-# ask the player what difficulty they want
 import random
+# ask the player what difficulty they want
+
 # randomly generate a riddle from the difficulty level they chose
 # Create classes (maybe?)
 class riddler:
