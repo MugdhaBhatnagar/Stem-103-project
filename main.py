@@ -35,3 +35,10 @@ while (a < 3):
     else:
         print("Yay! You solved the riddle!")
         exit()
+
+# og else statement
+'''
+else:
+    print("I ask the riddles, not you. Goodbye.")
+    exit()
+    '''
