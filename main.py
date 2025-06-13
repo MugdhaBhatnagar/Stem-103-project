@@ -10,10 +10,7 @@ while (a < 3):
     print("Please select difficulty level for your riddle.")
     time.sleep(1)
     x = input( "\n 1: Easy \n 2: Medium \n 3: Hard \n ")
-    if (x == 1):
-        y = random.choice(riddles.easy_riddle_questions)
-        z = riddles.easy_riddle_answers(y)
-    elif(x == 1):
+    if(x == 1):
         random_element = random.randint(0, len(riddles.easy_riddle_questions)-1)
         y = riddles.easy_riddle_questions[random_element]
         z = riddles.easy_riddle_answers[random_element]
