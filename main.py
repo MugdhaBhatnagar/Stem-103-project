@@ -27,8 +27,9 @@ time.sleep(1)
 # check if the answer is correct or wrong
 a = 0
 while (a < 3):
-    b = input("Guess the answer to the riddle. You have 3 tries.")
+    b = input("Guess the answer to the riddle. You have 3 tries. ")
     if (b != z):
+        time.sleep(1)
         print("Ruh roh. You got it wrong, try again")
         a +=1
     else:
