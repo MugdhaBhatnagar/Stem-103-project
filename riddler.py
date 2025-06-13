@@ -1,6 +1,5 @@
 # Create classes (maybe?)
 class Riddler:
-    def __init__(difficulty, riddle, answer):
-        self.difficulty = difficulty
+    def __init__(self,riddle, answer):
         self.riddle = riddle
         self.answer = answer
