@@ -25,9 +25,9 @@ users_riddle = riddler.Riddler(y,z)
 print(y)
 time.sleep(1)
 # check if the answer is correct or wrong
-a = 3
-while (a < 6):
-    b = input("Guess the answer to the riddle. You have" + a + "tries.")
+a = 0
+while (a < 3):
+    b = input("Guess the answer to the riddle. You have 3 tries.")
     if (b != z):
         print("Ruh roh. You got it wrong, try again")
         a +=1
