@@ -31,16 +31,14 @@ def ask(ridd,answer):
     time.sleep(1)
     print(ridd)
     time.sleep(1)
-    attempt = 3
-    for attempts in range(3,6):
-        user_input = input(f"Enter your answer. You have {attempt} attempts remaining ")
+    for attempts in range(3,0,-1):
+        user_input = input(f"Enter your answer. You have {attempts} attempts remaining ")
         if (user_input == answer):
             print("Yay! you solved the riddle!")
             play_more()
 
         else:
             print("No, that's not it...")
-            attempt = attempts - 1
 
     print(f"You're out of luck. The correct answer was: {answer}")
 
