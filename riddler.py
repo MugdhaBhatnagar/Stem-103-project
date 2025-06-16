@@ -43,6 +43,7 @@ def ask(ridd,answer):
             print("No, that's not it...")
 
     print(f"You're out of luck. The correct answer was: {answer}")
+    play_more()
 
 # Asks the player if they want to play this game again. Repeats if they do.
 def play_more():
