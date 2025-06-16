@@ -2,12 +2,13 @@ import time
 import riddles
 import random
 
+#  Sends the welcome statement and tells the player about the rules of the game
 def initialize_game():
     print("Hello! Welcome to the Riddle Game! \nYou have to select a riddle difficulty and try to answer the riddle within 3 tries.")
     time.sleep(1)
 
+# Selects a random riddle and its correct answer from the difficulty the player chose
 def select_riddle(difficulty):
-    
     if(difficulty == 1):
         random_element = random.randint(0, len(riddles.easy_riddle_questions)-1)
         y = riddles.easy_riddle_questions[random_element]
@@ -25,6 +26,7 @@ def select_riddle(difficulty):
         exit()
     return y,z
 
+# Takes input from the player and checks to see if its correct
 def ask(ridd,answer):
     time.sleep(1)
     print(ridd)
@@ -42,6 +44,7 @@ def ask(ridd,answer):
 
     print(f"You're out of luck. The correct answer was: {answer}")
 
+# Asks the player if they want to play this game again. Repeats if they do.
 def play_more():
     continue_playing = input("Do you want to continue playing? Type Y for yes or N for no. ")
     if (continue_playing == 'Y'):
