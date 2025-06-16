@@ -54,3 +54,4 @@ def play_more():
         return continue_playing,difficulty,ridd,answer
     else:
         print("Goodbye.")
+        exit()
