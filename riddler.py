@@ -52,7 +52,7 @@ def play_more():
         difficulty = int(input("Select riddle difficulty. Enter 1 for easy, 2 for medium, or 3 for hard. "))
         ridd,answer = select_riddle(difficulty)
         ask(ridd,answer)
-        return continue_playing,difficulty,ridd,answer
+        
     else:
         print("Goodbye.")
         exit()
