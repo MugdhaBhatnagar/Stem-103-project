@@ -8,6 +8,8 @@ def initialize_game():
     time.sleep(1)
     print("You have to select a riddle difficulty and try to answer the riddle within 3 tries.")
     time.sleep(1)
+    print("Make sure your answer starts with a capital letter, doesn't have a space in the beginning, and doesn't end with a punctuation")
+    time.sleep(1)
 
 # Selects a random riddle and its correct answer from the difficulty the player chose
 def select_riddle(difficulty):
