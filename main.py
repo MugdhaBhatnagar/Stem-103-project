@@ -1,17 +1,17 @@
-# import the stuff needed
-import time
-from selection import select_riddle
-from riddler import Riddler
-# ask the player what difficulty they want
-print("Please select difficulty level for your riddle.")
+# import functions from riddler
+from riddler import *
+
+# initialize the game
+initialize_game()
+
+# Get the user's difficulty preferance
 time.sleep(1)
-difficulty =int(input( "\n 1: Easy \n 2: Medium \n 3: Hard \n "))
+difficulty = int(input("Select riddle difficulty. Enter 1 for easy, 2 for medium, or 3 for hard. "))
+
+# Store the riddle and the correct answer
+ridd,answer = select_riddle(difficulty)
+
+# Ask the riddle, ask if user wants to continue playing
+ask(ridd,answer)
 
 
-riddle = select_riddle(difficulty)
-if riddle:
-    question, answer = riddle
-    game = Riddler(question, answer)
-    game.ask()
-else:
-    print("Invalid choice. Exiting.")
